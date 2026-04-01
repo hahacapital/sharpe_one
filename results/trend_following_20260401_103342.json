@@ -1,0 +1,87 @@
+{
+  "strategy": "trend_following",
+  "params": {
+    "fast_period": 20,
+    "slow_period": 60,
+    "atr_period": 14,
+    "atr_threshold": 1.0,
+    "use_ema": true
+  },
+  "symbols_tested": 1,
+  "timeframe": "1h",
+  "train_metrics": {
+    "total_return": 49.73152,
+    "annualized_return": 1.45387,
+    "sharpe_ratio": 2.0487,
+    "max_drawdown": 0.327585,
+    "calmar_ratio": 4.4381,
+    "win_rate": 0.4907,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 38345.0
+  },
+  "test_metrics": {
+    "total_return": 1.042478,
+    "annualized_return": 0.463693,
+    "sharpe_ratio": 1.3089,
+    "max_drawdown": 0.217451,
+    "calmar_ratio": 2.1324,
+    "win_rate": 0.4838,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 16434.0
+  },
+  "benchmark_comparison": {
+    "BTC": {
+      "benchmark_return": 0.046017,
+      "excess_return": 0.996461,
+      "beats": "True",
+      "benchmark_sharpe": 0.2859
+    },
+    "QQQ": {
+      "benchmark_return": 0.291028,
+      "excess_return": 0.75145,
+      "beats": "True",
+      "benchmark_sharpe": 0.8989
+    },
+    "Gold": {
+      "benchmark_return": 0.952773,
+      "excess_return": 0.089705,
+      "beats": "True",
+      "benchmark_sharpe": 2.0171
+    },
+    "beats_all": true
+  },
+  "per_symbol": {
+    "BTC/USDT:USDT": {
+      "train": {
+        "total_return": 49.73152,
+        "annualized_return": 1.45387,
+        "sharpe_ratio": 2.0487,
+        "max_drawdown": 0.327585,
+        "calmar_ratio": 4.4381,
+        "win_rate": 0.4907,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 38345
+      },
+      "test": {
+        "total_return": 1.042478,
+        "annualized_return": 0.463693,
+        "sharpe_ratio": 1.3089,
+        "max_drawdown": 0.217451,
+        "calmar_ratio": 2.1324,
+        "win_rate": 0.4838,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 16434
+      },
+      "signals": {
+        "long": 4331,
+        "short": 3841,
+        "flat": 8262
+      }
+    }
+  },
+  "timestamp": "2026-04-01T10:33:42.293519+00:00"
+}

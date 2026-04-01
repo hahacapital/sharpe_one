@@ -1,0 +1,90 @@
+{
+  "strategy": "mean_reversion",
+  "params": {
+    "bb_period": 24,
+    "entry_zscore": 2.0,
+    "exit_zscore": 0.5,
+    "adx_period": 14,
+    "adx_max": 25,
+    "rsi_period": 14,
+    "rsi_oversold": 30,
+    "rsi_overbought": 70
+  },
+  "symbols_tested": 1,
+  "timeframe": "1h",
+  "train_metrics": {
+    "total_return": -0.998155,
+    "annualized_return": -0.762869,
+    "sharpe_ratio": -6.1328,
+    "max_drawdown": 0.998163,
+    "calmar_ratio": -0.7643,
+    "win_rate": 0.4164,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 38345.0
+  },
+  "test_metrics": {
+    "total_return": -0.843483,
+    "annualized_return": -0.628167,
+    "sharpe_ratio": -5.9446,
+    "max_drawdown": 0.844153,
+    "calmar_ratio": -0.7441,
+    "win_rate": 0.4221,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 16434.0
+  },
+  "benchmark_comparison": {
+    "BTC": {
+      "benchmark_return": 0.046017,
+      "excess_return": -0.8895,
+      "beats": "False",
+      "benchmark_sharpe": 0.2859
+    },
+    "QQQ": {
+      "benchmark_return": 0.291028,
+      "excess_return": -1.134511,
+      "beats": "False",
+      "benchmark_sharpe": 0.8989
+    },
+    "Gold": {
+      "benchmark_return": 0.952773,
+      "excess_return": -1.796256,
+      "beats": "False",
+      "benchmark_sharpe": 2.0171
+    },
+    "beats_all": false
+  },
+  "per_symbol": {
+    "BTC/USDT:USDT": {
+      "train": {
+        "total_return": -0.998155,
+        "annualized_return": -0.762869,
+        "sharpe_ratio": -6.1328,
+        "max_drawdown": 0.998163,
+        "calmar_ratio": -0.7643,
+        "win_rate": 0.4164,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 38345
+      },
+      "test": {
+        "total_return": -0.843483,
+        "annualized_return": -0.628167,
+        "sharpe_ratio": -5.9446,
+        "max_drawdown": 0.844153,
+        "calmar_ratio": -0.7441,
+        "win_rate": 0.4221,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 16434
+      },
+      "signals": {
+        "long": 836,
+        "short": 732,
+        "flat": 14866
+      }
+    }
+  },
+  "timestamp": "2026-04-01T10:33:42.231697+00:00"
+}

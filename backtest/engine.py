@@ -82,6 +82,13 @@ def run_backtest(strategy, df: pd.DataFrame, settings: dict | None = None) -> di
     price_returns = df["open"].pct_change().fillna(0)
     strategy_returns = positions * price_returns
 
+    # Add funding rate payments if available
+    # Positive funding: longs pay shorts. So adjustment = -position * rate
+    # Applied at 1/8 per hour (funding settles every 8h)
+    if "funding_rate" in df.columns:
+        funding_adjustment = -positions * df["funding_rate"].fillna(0) / 8
+        strategy_returns = strategy_returns + funding_adjustment
+
     # Deduct trading costs on position changes
     position_changes = positions.diff().abs().fillna(0)
     # Use taker fee for simplicity (market orders at signal change)

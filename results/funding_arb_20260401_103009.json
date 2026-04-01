@@ -1,0 +1,86 @@
+{
+  "strategy": "funding_arb",
+  "params": {
+    "funding_threshold_long": -0.0005,
+    "funding_threshold_short": 0.001,
+    "funding_ma_period": 8,
+    "exit_threshold": 0.0002
+  },
+  "symbols_tested": 1,
+  "timeframe": "1h",
+  "train_metrics": {
+    "total_return": 0.263816,
+    "annualized_return": 0.054985,
+    "sharpe_ratio": 0.395,
+    "max_drawdown": 0.191475,
+    "calmar_ratio": 0.2872,
+    "win_rate": 0.4782,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 38345.0
+  },
+  "test_metrics": {
+    "total_return": 0.0,
+    "annualized_return": 0.0,
+    "sharpe_ratio": 0.0,
+    "max_drawdown": 0.0,
+    "calmar_ratio": 0.0,
+    "win_rate": 0.0,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 16434.0
+  },
+  "benchmark_comparison": {
+    "BTC": {
+      "benchmark_return": 0.046017,
+      "excess_return": -0.046017,
+      "beats": "False",
+      "benchmark_sharpe": 0.2859
+    },
+    "QQQ": {
+      "benchmark_return": 0.291028,
+      "excess_return": -0.291028,
+      "beats": "False",
+      "benchmark_sharpe": 0.8989
+    },
+    "Gold": {
+      "benchmark_return": 0.952773,
+      "excess_return": -0.952773,
+      "beats": "False",
+      "benchmark_sharpe": 2.0171
+    },
+    "beats_all": false
+  },
+  "per_symbol": {
+    "BTC/USDT:USDT": {
+      "train": {
+        "total_return": 0.263816,
+        "annualized_return": 0.054985,
+        "sharpe_ratio": 0.395,
+        "max_drawdown": 0.191475,
+        "calmar_ratio": 0.2872,
+        "win_rate": 0.4782,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 38345
+      },
+      "test": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "calmar_ratio": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 16434
+      },
+      "signals": {
+        "long": 0,
+        "short": 0,
+        "flat": 16434
+      }
+    }
+  },
+  "timestamp": "2026-04-01T10:30:09.154012+00:00"
+}

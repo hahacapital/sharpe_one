@@ -19,8 +19,12 @@ backtest:
   maker_fee: 0.0002    # 0.02%
   taker_fee: 0.0005    # 0.05%
   slippage: 0.0001     # 0.01%
-  train_ratio: 0.7     # 70% train, 30% test
-  default_timeframe: "1h"
+  train_ratio: 0.7     # 70% train, 30% test (legacy, used by optimizer)
+  default_timeframe: "4h"
+  walk_forward:
+    train_bars: 4380    # 2 years of 4h bars
+    test_bars: 1095     # 6 months of 4h bars
+    step_bars: 1095     # roll forward by 6 months
 
 optimize:
   n_trials: 200

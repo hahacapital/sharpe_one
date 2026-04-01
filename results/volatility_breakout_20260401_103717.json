@@ -1,0 +1,146 @@
+{
+  "strategy": "volatility_breakout",
+  "params": {
+    "bb_period": 20,
+    "bb_std": 2.0,
+    "squeeze_lookback": 50,
+    "squeeze_percentile": 20,
+    "atr_period": 14,
+    "trail_atr_mult": 2.0
+  },
+  "symbols_tested": 3,
+  "timeframe": "1h",
+  "train_metrics": {
+    "total_return": 591490.746573,
+    "annualized_return": 19.714238,
+    "sharpe_ratio": 6.907633,
+    "max_drawdown": 0.09411,
+    "calmar_ratio": 202.182767,
+    "win_rate": 0.489933,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 36904.0
+  },
+  "test_metrics": {
+    "total_return": 43.158341,
+    "annualized_return": 7.269679,
+    "sharpe_ratio": 7.087867,
+    "max_drawdown": 0.040567,
+    "calmar_ratio": 166.457533,
+    "win_rate": 0.498767,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 15816.666667
+  },
+  "benchmark_comparison": {
+    "BTC": {
+      "benchmark_return": 0.046017,
+      "excess_return": 43.112324,
+      "beats": "True",
+      "benchmark_sharpe": 0.2859
+    },
+    "QQQ": {
+      "benchmark_return": 0.291028,
+      "excess_return": 42.867313,
+      "beats": "True",
+      "benchmark_sharpe": 0.8989
+    },
+    "Gold": {
+      "benchmark_return": 0.952773,
+      "excess_return": 42.205568,
+      "beats": "True",
+      "benchmark_sharpe": 2.0171
+    },
+    "beats_all": true
+  },
+  "per_symbol": {
+    "BTC/USDT:USDT": {
+      "train": {
+        "total_return": 2493.911109,
+        "annualized_return": 4.978835,
+        "sharpe_ratio": 6.3717,
+        "max_drawdown": 0.085953,
+        "calmar_ratio": 57.9248,
+        "win_rate": 0.4844,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 38345
+      },
+      "test": {
+        "total_return": 9.818867,
+        "annualized_return": 2.561826,
+        "sharpe_ratio": 6.9342,
+        "max_drawdown": 0.028854,
+        "calmar_ratio": 88.7851,
+        "win_rate": 0.5089,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 16434
+      },
+      "signals": {
+        "long": 1586,
+        "short": 1609,
+        "flat": 13239
+      }
+    },
+    "ETH/USDT:USDT": {
+      "train": {
+        "total_return": 234096.479212,
+        "annualized_return": 15.885843,
+        "sharpe_ratio": 7.4587,
+        "max_drawdown": 0.096847,
+        "calmar_ratio": 164.0307,
+        "win_rate": 0.4929,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 38345
+      },
+      "test": {
+        "total_return": 40.634044,
+        "annualized_return": 6.309316,
+        "sharpe_ratio": 7.1562,
+        "max_drawdown": 0.044995,
+        "calmar_ratio": 140.2219,
+        "win_rate": 0.492,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 16434
+      },
+      "signals": {
+        "long": 1754,
+        "short": 1669,
+        "flat": 13011
+      }
+    },
+    "SOL/USDT:USDT": {
+      "train": {
+        "total_return": 1537881.849399,
+        "annualized_return": 38.278036,
+        "sharpe_ratio": 6.8925,
+        "max_drawdown": 0.099529,
+        "calmar_ratio": 384.5928,
+        "win_rate": 0.4925,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 34022
+      },
+      "test": {
+        "total_return": 79.022111,
+        "annualized_return": 12.937894,
+        "sharpe_ratio": 7.1732,
+        "max_drawdown": 0.047853,
+        "calmar_ratio": 270.3656,
+        "win_rate": 0.4954,
+        "profit_factor": 0.0,
+        "total_trades": 0,
+        "bars": 14582
+      },
+      "signals": {
+        "long": 1500,
+        "short": 1955,
+        "flat": 11127
+      }
+    }
+  },
+  "timestamp": "2026-04-01T10:37:17.078014+00:00"
+}

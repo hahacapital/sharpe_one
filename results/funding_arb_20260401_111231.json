@@ -1,0 +1,315 @@
+{
+  "strategy": "funding_arb",
+  "params": {
+    "funding_slow_ma": 42,
+    "funding_threshold": 0.0,
+    "price_ma": 120,
+    "trend_weight": 0.5
+  },
+  "symbols_tested": 3,
+  "timeframe": "4h",
+  "walk_forward_windows": 8,
+  "train_metrics": {
+    "total_return": 0.213151,
+    "annualized_return": 0.058431,
+    "sharpe_ratio": 0.24791,
+    "max_drawdown": 0.56032,
+    "calmar_ratio": 0.166379,
+    "win_rate": 0.461154,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 4380.0
+  },
+  "test_metrics": {
+    "total_return": 0.088586,
+    "annualized_return": 0.403903,
+    "sharpe_ratio": 0.094621,
+    "max_drawdown": 0.253102,
+    "calmar_ratio": 1.738462,
+    "win_rate": 0.461029,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 1095.0
+  },
+  "benchmark_comparison": {
+    "BTC": {
+      "benchmark_return": 0.896838,
+      "excess_return": -0.808252,
+      "beats": "False",
+      "benchmark_sharpe": 0.5687
+    },
+    "QQQ": {
+      "benchmark_return": 0.608192,
+      "excess_return": -0.519606,
+      "beats": "False",
+      "benchmark_sharpe": 0.7506
+    },
+    "Gold": {
+      "benchmark_return": 1.478304,
+      "excess_return": -1.389718,
+      "beats": "False",
+      "benchmark_sharpe": 1.8005
+    },
+    "beats_all": false
+  },
+  "per_window": [
+    {
+      "window": 1,
+      "train_start": "2020-01-01 00:00:00+00:00",
+      "train_end": "2021-12-30 20:00:00+00:00",
+      "test_start": "2021-12-31 00:00:00+00:00",
+      "test_end": "2022-07-01 08:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": -0.27023,
+        "annualized_return": -0.15944,
+        "sharpe_ratio": 0.0765,
+        "max_drawdown": 0.804691,
+        "calmar_ratio": -0.185467,
+        "win_rate": 0.4511,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": 1.195748,
+        "annualized_return": 3.972147,
+        "sharpe_ratio": 2.781667,
+        "max_drawdown": 0.255923,
+        "calmar_ratio": 15.476,
+        "win_rate": 0.480533,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 2,
+      "train_start": "2020-07-01 12:00:00+00:00",
+      "train_end": "2022-07-01 08:00:00+00:00",
+      "test_start": "2022-07-01 12:00:00+00:00",
+      "test_end": "2022-12-30 20:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": 0.100075,
+        "annualized_return": 0.020081,
+        "sharpe_ratio": 0.359767,
+        "max_drawdown": 0.749706,
+        "calmar_ratio": 0.061,
+        "win_rate": 0.4605,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": 0.109284,
+        "annualized_return": 0.247686,
+        "sharpe_ratio": 0.573733,
+        "max_drawdown": 0.182572,
+        "calmar_ratio": 1.366833,
+        "win_rate": 0.467867,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 3,
+      "train_start": "2020-12-31 00:00:00+00:00",
+      "train_end": "2022-12-30 20:00:00+00:00",
+      "test_start": "2022-12-31 00:00:00+00:00",
+      "test_end": "2023-07-01 08:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": 1.015152,
+        "annualized_return": 0.406284,
+        "sharpe_ratio": 0.829533,
+        "max_drawdown": 0.570309,
+        "calmar_ratio": 0.741467,
+        "win_rate": 0.470833,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": -0.168387,
+        "annualized_return": -0.300543,
+        "sharpe_ratio": -1.219,
+        "max_drawdown": 0.298117,
+        "calmar_ratio": -1.064067,
+        "win_rate": 0.437567,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 4,
+      "train_start": "2021-07-01 12:00:00+00:00",
+      "train_end": "2023-07-01 08:00:00+00:00",
+      "test_start": "2023-07-01 12:00:00+00:00",
+      "test_end": "2023-12-30 20:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": 1.10178,
+        "annualized_return": 0.437606,
+        "sharpe_ratio": 0.955333,
+        "max_drawdown": 0.417216,
+        "calmar_ratio": 1.102667,
+        "win_rate": 0.465367,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": -0.143067,
+        "annualized_return": -0.257419,
+        "sharpe_ratio": -0.645767,
+        "max_drawdown": 0.250539,
+        "calmar_ratio": -0.974433,
+        "win_rate": 0.4664,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 5,
+      "train_start": "2021-12-31 00:00:00+00:00",
+      "train_end": "2023-12-30 20:00:00+00:00",
+      "test_start": "2023-12-31 00:00:00+00:00",
+      "test_end": "2024-06-30 08:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": 0.706508,
+        "annualized_return": 0.29408,
+        "sharpe_ratio": 0.759733,
+        "max_drawdown": 0.456243,
+        "calmar_ratio": 0.6467,
+        "win_rate": 0.464333,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": -0.243853,
+        "annualized_return": -0.416329,
+        "sharpe_ratio": -1.063333,
+        "max_drawdown": 0.325274,
+        "calmar_ratio": -1.278267,
+        "win_rate": 0.453967,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 6,
+      "train_start": "2022-07-01 12:00:00+00:00",
+      "train_end": "2024-06-30 08:00:00+00:00",
+      "test_start": "2024-06-30 12:00:00+00:00",
+      "test_end": "2024-12-29 20:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": -0.406388,
+        "annualized_return": -0.230037,
+        "sharpe_ratio": -0.5345,
+        "max_drawdown": 0.586381,
+        "calmar_ratio": -0.399333,
+        "win_rate": 0.4553,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": 0.08894,
+        "annualized_return": 0.218896,
+        "sharpe_ratio": 0.486133,
+        "max_drawdown": 0.219778,
+        "calmar_ratio": 1.309133,
+        "win_rate": 0.458567,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 7,
+      "train_start": "2022-12-31 00:00:00+00:00",
+      "train_end": "2024-12-29 20:00:00+00:00",
+      "test_start": "2024-12-30 00:00:00+00:00",
+      "test_end": "2025-06-30 08:00:00+00:00",
+      "symbols": 3,
+      "train": {
+        "total_return": -0.372476,
+        "annualized_return": -0.211614,
+        "sharpe_ratio": -0.399633,
+        "max_drawdown": 0.54904,
+        "calmar_ratio": -0.377,
+        "win_rate": 0.4548,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": -0.060733,
+        "annualized_return": -0.100405,
+        "sharpe_ratio": -0.014867,
+        "max_drawdown": 0.264045,
+        "calmar_ratio": -0.3631,
+        "win_rate": 0.461133,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    },
+    {
+      "window": 8,
+      "train_start": "2023-07-01 12:00:00+00:00",
+      "train_end": "2025-06-30 08:00:00+00:00",
+      "test_start": "2025-06-30 12:00:00+00:00",
+      "test_end": "2025-12-29 20:00:00+00:00",
+      "symbols": 2,
+      "train": {
+        "total_return": -0.16921,
+        "annualized_return": -0.089514,
+        "sharpe_ratio": -0.06345,
+        "max_drawdown": 0.348972,
+        "calmar_ratio": -0.259,
+        "win_rate": 0.467,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 4380.0
+      },
+      "test": {
+        "total_return": -0.069245,
+        "annualized_return": -0.132808,
+        "sharpe_ratio": -0.1416,
+        "max_drawdown": 0.228566,
+        "calmar_ratio": -0.5644,
+        "win_rate": 0.4622,
+        "profit_factor": 0.0,
+        "total_trades": 0.0,
+        "bars": 1095.0
+      }
+    }
+  ],
+  "symbol_data_ranges": {
+    "BTC/USDT:USDT": {
+      "start": "2020-01-01 00:00:00+00:00",
+      "end": "2026-04-01 08:00:00+00:00",
+      "bars": 13695
+    },
+    "ETH/USDT:USDT": {
+      "start": "2020-01-01 00:00:00+00:00",
+      "end": "2026-04-01 08:00:00+00:00",
+      "bars": 13695
+    },
+    "SOL/USDT:USDT": {
+      "start": "2020-09-14 04:00:00+00:00",
+      "end": "2026-04-01 08:00:00+00:00",
+      "bars": 12152
+    }
+  },
+  "timestamp": "2026-04-01T11:12:31.250388+00:00"
+}

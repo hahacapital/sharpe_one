@@ -1,0 +1,56 @@
+{
+  "strategy": "funding_arb",
+  "best_params": {
+    "funding_slow_ma": 90,
+    "funding_threshold": -0.00019968223559423134,
+    "price_ma": 193,
+    "trend_weight": 0.4156480557925287
+  },
+  "default_params": {
+    "funding_slow_ma": 42,
+    "funding_threshold": 0.0,
+    "price_ma": 120,
+    "trend_weight": 0.5
+  },
+  "train_metrics": {
+    "total_return": 18.690068,
+    "annualized_return": 0.900194,
+    "sharpe_ratio": 1.199355,
+    "max_drawdown": 0.630963,
+    "calmar_ratio": 1.607955,
+    "win_rate": 0.4861,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 9078.454545
+  },
+  "test_metrics": {
+    "total_return": 0.357319,
+    "annualized_return": 0.149469,
+    "sharpe_ratio": 0.457036,
+    "max_drawdown": 0.475457,
+    "calmar_ratio": 0.454891,
+    "win_rate": 0.475255,
+    "profit_factor": 0.0,
+    "total_trades": 0.0,
+    "bars": 3891.363636
+  },
+  "optimization": {
+    "n_trials": 200,
+    "best_trial": 194,
+    "best_train_sharpe": 1.1994
+  },
+  "symbols_used": [
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "XRP/USDT:USDT",
+    "DOGE/USDT:USDT",
+    "BNB/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "LINK/USDT:USDT",
+    "DOT/USDT:USDT",
+    "NEAR/USDT:USDT"
+  ],
+  "timestamp": "2026-04-01T11:43:33.729754+00:00"
+}

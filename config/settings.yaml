@@ -1,0 +1,32 @@
+# Sharpe One global configuration
+
+data:
+  base_dir: "data/raw"
+  default_timeframes: ["1h", "4h", "1d"]
+  benchmark_dir: "data/benchmarks"
+
+universe:
+  exchange: "binance"
+  quote: "USDT"
+  market_type: "swap"  # perpetual futures
+  top_n: 30
+  min_listing_days: 90
+  exclude_stablecoins: true
+  stablecoin_keywords: ["BUSD", "USDC", "DAI", "TUSD", "FDUSD"]
+
+backtest:
+  initial_capital: 10000
+  maker_fee: 0.0002    # 0.02%
+  taker_fee: 0.0005    # 0.05%
+  slippage: 0.0001     # 0.01%
+  train_ratio: 0.7     # 70% train, 30% test
+  default_timeframe: "1h"
+
+optimize:
+  n_trials: 200
+  timeout: 600         # seconds
+  direction: "maximize"
+  metric: "sharpe_ratio"
+
+results:
+  output_dir: "results"
